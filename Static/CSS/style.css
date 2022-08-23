@@ -1,0 +1,86 @@
+
+#ban
+{
+    width: auto;
+    height: 150px;
+}
+#logo
+{
+    width: 250px;
+    height: 250px;
+    margin:25px;  
+}
+.box_flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-around ;
+    flex-flow: row wrap;
+
+}
+.box_grid{
+    display: grid;
+    
+    
+    
+}
+.conteneur
+{
+    flex-direction:column;
+    align-items: center;
+    height: 420px;
+    min-width: 350px;
+
+
+}
+.element:nth-child(1)
+{
+    text-align: center;
+    background-color: #3b6c9c;
+    border-radius: 10px;
+ 
+    width: 80%;
+}
+.element:nth-child(1) > h1
+{
+    font-family: Inter;
+    font-size: 35px;
+    text-transform:uppercase;
+    color: aliceblue;   
+    margin: 5px;
+}
+.element:nth-child(2)
+{
+    grid-template-columns: 1fr 5fr;
+    background-color: bisque;
+
+    width: 80%;
+    min-width: 350px ;
+    height: auto;
+}
+.element:nth-child(3)
+{
+    background-color: blueviolet;
+    width: auto;
+    display: none;
+}
+.info
+{
+    background-color: aquamarine;
+    
+}
+.divlogo{
+    grid-row: 3/1;  
+}
+
+
+.social{
+    
+    align-self:center;
+}
+.social > ul >li{
+    display: inline;
+    list-style:none;
+
+}
+
+
