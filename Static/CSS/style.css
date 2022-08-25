@@ -1,15 +1,56 @@
+/*-------- Mes Variables---------------*/
 
+
+:root {
+    --color_background  : #303736;
+    --fond_color : 	#1fa1b8;
+    --color_bac1 : 	#6b574e;
+    --color_fond2 :	#59bd99;
+    --color_second : #d0aa5b;
+    --color_back_img : aliceblue;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(../Typo/Roboto/Roboto-Black.ttf);
+}
+
+@font-face {
+    font-family: Roboto-R;
+    src: url(../Typo/Roboto/Roboto-Regular.ttf);
+}
+
+
+/*-------- Fin Variables---------------*/
+
+/*-------- Mes Id---------------*/
 #ban
 {
     width: auto;
-    height: 150px;
+    height: auto;
 }
 #logo
 {
-    width: 250px;
-    height: 250px;
-    margin:25px;  
+    background-color:var(--color_back_img);
+    width: 192px;
+    height: 256px;
+    margin: 10px;
+    border-radius: 50% 20% / 10% 40%;
+    box-shadow: 2px 2px 5px var(--color_bac1);
 }
+
+
+/*-------- Fin Id---------------*/
+
+/*-------- Typo---------------*/
+
+.typo_p
+{
+    font-family: Roboto-R;
+    color: var(--fond_color);
+    
+}
+
+/*-------- Fin typo---------------*/
 .box_flex{
     display: flex;
     align-items: center;
@@ -19,9 +60,7 @@
 }
 .box_grid{
     display: grid;
-    
-    
-    
+    gap: 10px;
 }
 .conteneur
 {
@@ -29,15 +68,12 @@
     align-items: center;
     height: 420px;
     min-width: 350px;
-
-
 }
 .element:nth-child(1)
 {
     text-align: center;
-    background-color: #3b6c9c;
+    background-color:var(--color_bac1);
     border-radius: 10px;
- 
     width: 80%;
 }
 .element:nth-child(1) > h1
@@ -51,7 +87,7 @@
 .element:nth-child(2)
 {
     grid-template-columns: 1fr 5fr;
-    background-color: bisque;
+    
 
     width: 80%;
     min-width: 350px ;
@@ -63,24 +99,33 @@
     width: auto;
     display: none;
 }
-.info
-{
-    background-color: aquamarine;
+.info{
+    font-family: Roboto;
+    font-size: large;
+    color: var(--color_bac1);
+    align-self: center;
+
     
+}
+.info_nom
+{
+    font-family: Roboto;
+    font-size: x-large;
+    color: var(--color_fond2);
+    margin-block:0 ;
 }
 .divlogo{
     grid-row: 3/1;  
 }
-
-
-.social{
-    
+.social{   
     align-self:center;
 }
 .social > ul >li{
     display: inline;
     list-style:none;
-
 }
 
 
+body{
+    background-color: var(--color_background);
+}
